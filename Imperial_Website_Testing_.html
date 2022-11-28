@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Grid layout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="StickyNavbar {.css">
+
+    <body>
+
+        <div class="Subnavbar">
+            <div class="btn">
+                <i class="fas fa-times close-btn"></i>
+            </div>
+
+
+        <div id="navbar">
+            <a class="active" href="javascript:void(0)">Home</a>
+            <a href="javascript:void(0)">About</a>
+
+        </div>
+
+        <div class="btn">
+            <i class="fa fa-bars subnav-btn"></i>
+        </div>
+
+        <script>
+            window.onscroll = function() {
+                myFunction()
+            };
+
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                } else {
+                    navbar.classList.remove("sticky");
+                }
+            }
+        </script>
+
+        <script type="text/javascript"> {
+                var head = document.querySelector("head");
+                head.classList.toggle('sticky', window.scrollY > 0);
+            };
+        </script>
+
+        <style>
+            body {
+                font-family: Arial, Arial, Helvetica, sans-serif;
+                margin: 0px;
+            }
+            
+            .navbar {
+                overflow: hidden;
+                background-color: #333;
+            }
+            
+            .navbar a {
+                float: right;
+                font-size: 50px;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            
+            .subnav {
+                float: right;
+                overflow: hidden;
+            }
+            
+            .subnav .subnavbtn {
+                font-size: 100px;
+                border: none;
+                outline: none;
+                color: white;
+                padding: 14px 16px;
+                background-color: none;
+                font-family: sans-serif;
+                margin: 0;
+            }
+            
+            .navbar a:hover,
+            .subnav:hover .subnavbtn {
+                background-color: gainsboro;
+            }
+            
+            .subnav-content a {
+                float: right;
+                color: white;
+                text-decoration: none;
+            }
+            
+            .subnav-content a:hover {
+                background-color: #eee;
+                color: black;
+            }
+            
+            .subnav:hover .subnav-content {
+                display: block;
+            }
+        </style>
+        </div>
+    </body>
+</head>
+
+<div class="wrapper">
+    <div class="logo">
+        <img src="imperial.jpg" alt="logo" width="500" height="400">
+    </div>
+
+    <body>
+
+        <center>
+            <h1>Welcome To ImperialClothingCo.</h1>
+        </center>
+    </body>
+
+<div class="bg">Content Section
+    This Section will be for text only.
+</div>
+</html>

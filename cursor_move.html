@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <h1>The cursor Property</h1>
+    <p>Mouse over the words to change the mouse cursor.</p>
+    <p class="move">move</p>
+</head>
+
+<body>
+<style>
+.move {
+	cursor:move;
+}
+
+.button {
+	background-color:#000;
+	border: none;
+	color: white;
+	padding: 20px 40px;
+	text-align:center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 17;
+	margin: 6px 4px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+
+.button:hover {
+	background-color: #FBE9DD;
+	color: white;
+}
+
+h1 {
+	margin: 25px 25px;
+	padding: 25px 300px 25px;
+
+}
+</style>
+
+<center><button class="button">button</button></center>
+</body>
+</html>
